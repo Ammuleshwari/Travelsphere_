@@ -1,0 +1,313 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travelsphere Entry Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            
+            color: #333;
+            overflow-x: hidden;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+            background-color: #006064;
+            color: white;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .logo {
+            font-size: 28px;
+            font-weight: 600;
+            font-family: 'Dancing Script', cursive;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            animation: logoSlideIn 1s ease-out forwards;
+        }
+
+        .flight {
+    font-size: 30px;
+    color: #ff6347;
+    margin-right: 10px; 
+    animation: flightMove 2s infinite;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@keyframes flightMove {
+    0% {
+        transform: translateX(0px);
+    }
+    50% {
+        transform: translateX(10px);
+    }
+    100% {
+        transform: translateX(0px);
+    }}
+
+        @keyframes logoSlideIn {
+            0% { opacity: 0; transform: translateX(-100%); }
+            100% { opacity: 1; transform: translateX(0); }
+        }
+
+        @keyframes fly {
+            0% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0); }
+        }
+
+        .nav-icons {
+    display: flex;
+    align-items: center;
+}
+
+.contact-icon, .user-icon {
+    position: relative;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.contact-icon i, .user-icon i {
+    font-size: 1.5em;
+}
+
+.contact-dropdown, .user-dropdown {
+    display: none;
+    position: absolute;
+    top: 35px;
+    right: 0;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    color: #333;
+    min-width: 150px;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    transform: translateY(-10px);
+}
+
+.contact-dropdown p, .user-dropdown button {
+    padding: 10px;
+    width: 100%;
+    text-align: left;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.user-dropdown button:hover, .contact-dropdown p:hover {
+    background-color: #f1f1f1;
+}
+
+.user-icon:hover .user-dropdown, .contact-icon:hover .contact-dropdown {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+        .main-section {
+            background-image: url('trial1.jpeg');
+         
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 0 20px;
+            animation: fadeIn 1s ease-out forwards;
+        }
+
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        .main-section h1 {
+            font-size: 48px;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+
+        .main-section p {
+            font-size: 20px;
+            margin-bottom: 40px;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 20px;
+        }
+
+        .cta-buttons a {
+            background-color: #00c1a4;
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            font-size: 18px;
+            border-radius: 30px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .cta-buttons a:hover {
+            background-color: #00838F;
+            transform: translateY(-5px);
+        }
+
+        .card {
+            background-color: white;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            border-radius: 10px;
+            width: 300px;
+            text-align: center;
+            animation: slideInUp 1s ease-out forwards;
+        }
+
+        @keyframes slideInUp {
+            0% { opacity: 0; transform: translateY(20px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+
+        .card img {
+            max-width: 100%;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .card h3 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .card a {
+            text-decoration: none;
+            background-color: #00ACC1;
+            color: white;
+            padding: 12px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .card a:hover {
+            background-color: #00838F;
+        }
+        footer {
+            background-color: #004D40;
+            color: white;
+            text-align: end;
+            padding: 15px;
+            padding-bottom: 0px;
+        }
+
+        .social-icons a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 24px;
+            transition: transform 0.3s ease;
+        }
+
+        .social-icons a:hover {
+            transform: translateY(-5px);
+        }
+    </style>
+</head>
+<body>
+
+    <header class="flex justify-between items-center bg-teal-700 text-white px-6 py-4 shadow-lg">
+        <div class="logo flex items-center text-2xl font-bold font-dancing-script cursor-pointer">
+            <span class="text-orange-500 text-3xl mr-2">✈️</span>
+            Travelsphere
+        </div>
+        <div class="flex items-center space-x-6">
+            <!-- Phone Icon -->
+            <div class="relative group">
+                <div class="flex items-center space-x-2 cursor-pointer">
+                    <i class="fas fa-phone text-2xl"></i>
+                </div>
+                <!-- Tooltip for Contact Info -->
+                <div class="absolute hidden group-hover:block bg-white text-gray-800 text-sm py-2 px-4 rounded shadow-lg -right-6 mt-2">
+                    Phone: +1-234-567-890
+                </div>
+            </div>
+            <!-- User Icon with Dropdown -->
+            <div class="relative group">
+                <div class="flex items-center space-x-2 cursor-pointer">
+                    <i class="fas fa-user text-2xl"></i>
+                </div>
+                <!-- Dropdown -->
+                <div class="absolute hidden group-hover:block bg-white text-gray-800 py-2 rounded shadow-lg right-0 mt-2 w-32">
+                    <button onclick="login()" class="w-full text-left px-4 py-2 hover:bg-gray-100">Login</button>
+                    <button onclick="logout()" class="w-full text-left px-4 py-2 hover:bg-gray-100">Logout</button>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+
+    <section class="main-section">
+        <h1>Your Next Adventure Awaits</h1>
+        <p>Uncover destinations and create memories last forever.</p>
+        <div class="cta-buttons">
+            <a href="travel11.html">Explore Page</a>
+            <a href="destination.html">Discover Destinations</a>
+        </div>
+    </section>
+
+    <footer class="bg-teal-900 text-white text-center p-4">
+        <p>&copy; 2024 Travelsphere. All Rights Reserved.</p>
+        <div class="mt-4 flex justify-center space-x-6">
+            <a href="#" class="text-white hover:text-teal-400 transition transform hover:-translate-y-1">
+                <i class="fab fa-facebook text-xl"></i>
+            </a>
+            <a href="#" class="text-white hover:text-teal-400 transition transform hover:-translate-y-1">
+                <i class="fab fa-twitter text-xl"></i>
+            </a>
+            <a href="#" class="text-white hover:text-teal-400 transition transform hover:-translate-y-1">
+                <i class="fab fa-instagram text-xl"></i>
+            </a>
+        </div>
+    </footer>
+    
+    <script>
+        function login() {
+            alert("Login clicked");
+        }
+    
+        function logout() {
+            alert("Logout clicked");
+        }
+    </script>
+    
+</body>
+</html>
+

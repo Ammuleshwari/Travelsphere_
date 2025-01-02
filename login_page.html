@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login/Register</title>
+    <link rel="stylesheet" href="login_page.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <video autoplay loop muted playsinline class="background-video">
+        <source src="f_video.mp4" type="video/mp4">
+    </video>
+    <div class="main"> 
+        <div class="welcome">
+            <span class="flight">✈️</span>
+            <h1>Welcome to Travelsphere</h1>
+        </div>
+
+        <div class="form-main">
+            <div class="form-t">
+                <button id="lbtn" onclick="showLogin()">Login</button>
+                <button id="rbtn" onclick="showRegister()">Register</button>
+            </div>
+            <form id="login-f" class="form" >
+                <h2>Login</h2>
+                <input type="email" name="email" id="login-email" placeholder="Email" required>
+                <input type="password" name="password" id="login-password" placeholder="Password" required>
+                <button type="submit" formaction="front_page.html">Login</button>
+            </form>
+            
+            <form id="register-f" class="form"  method="POST" style="display: none;">
+                <h2>Register</h2>
+                <input type="text" name="name" id="register-name" placeholder="Name" required>
+                <input type="email" name="email" id="register-email" placeholder="Email" required>
+                <input type="password" name="password" id="register-password" placeholder="Password" required>
+                <button type="submit">Register</button>
+            </form>
+            
+        </div>
+    </div>
+
+    <script src="login_page.js"></script>
+</body>
+</html>

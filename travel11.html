@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="travel111.css" />
+    <script src="travel1111.js"></script>
+    <title>Travel11</title>
+</head>
+
+<body>
+
+    <body>
+
+      
+        <section class="nav-bar">
+            <span class="flight">✈️</span>
+            <div class="logo">TravelSphere</div>
+            
+            <ul class="menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="tours.html">Blog</a></li>
+               <li><a href="contact.html">Contact us</a></li>
+                <li><a href="#">About us</a></li>    
+                <li><a href="about.html">Destinations</a></li>
+                <li>
+                    <a href="#" onclick="logout()">Logout</a>
+                </li>
+            </ul>
+            <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+
+            </div>
+
+        </section>
+        <section class="banner">
+            <div class="banner-text-item">
+                <div class="banner-heading">
+                    <h1>Your journey, our priority.</h1>
+                </div>
+                <form class="form">
+                    <input type="text" list="mylist" placeholder="Where would you like to go? ✈">
+                    <datalist id="mylist">
+                        <option>Switzerland </option>
+                        <option>France</option>
+                        <option>Indonesia</option>
+                        <option>New York</option>
+                        <option>Thailand</option>
+                        <option>Korea</option>
+                        <option>vietnam</option>
+                    </datalist>
+                    <input type="text" class="date" placeholder="Check-in Date" onfocus="(this.type='date')">
+                   <a href="#" class="book" onclick="confirmation()" >Book Now</a>
+                </form>
+            </div>
+        </section>
+        <section class="services">
+            <div class="service-item">
+                <img src="food.webp">
+                <h2>100% Hygiene Hotels & Food</h2>
+            </div>
+            <div class="service-item">
+                <img src="trust.avif">
+                <h2>10+ Years of Experience</h2>
+            </div>
+            <div class="service-item">
+                <img src="agency.avif">
+                <h2>100% Trusted Travel Agency</h2>
+            </div>
+            <div class="service-item">
+                <img src="guide1.avif">
+                <h2>Genuine Trip Advisors</h2>
+            </div>
+        </section>
+        <section class="places">
+            <div class="places-text">
+                <small>Top Travel Destinations</small>
+                <h2>Curated Vacation Packages</h2>
+            </div>
+
+            <div class="cards">
+                <div class="card">
+                    <div class="zoom-img">
+                        <div class="img-card">
+                            <img
+                                src="pic11travel.webp">
+                        </div>
+                    </div>
+
+                    <div class="text">
+                        <span class="rating">⭐⭐⭐⭐⭐</span>
+                        <h2>The Da-Nang Adventure</h2>
+                        <p class="cost">$1870 / Per Person</p>
+                        <div class="card-box">
+                            <a href="Vietnam.html" style="text-decoration:none"> <p class="location" style="text-align:center; color:black;">✈ Da-Nang, Vietnam</p></a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="card">
+                    <div class="zoom-img">
+                        <div class="img-card">
+                            <img src="bali.webp">
+                        </div>
+                    </div>
+
+                    <div class="text">
+                        <span class="rating">⭐⭐⭐⭐⭐</span>
+                        <h2>The Lake View</h2>
+                        <p class="cost">$1870 / Per Person</p>
+                        <div class="card-box">
+                           <a href="bali.html" style="text-decoration:none">  <p class="location" style="text-align:center; color:black;">✈ Bali, Indonesia</p></a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="card">
+                    <div class="zoom-img">
+                        <div class="img-card">
+                            <img src="manhattan.jpeg">
+                        </div>
+                    </div>
+
+                    <div class="text">
+                        <span class="rating">⭐⭐⭐⭐⭐</span>
+                        <h2>The Manhattan Bridge</h2>
+                        <p class="cost">$1870 / Per Person</p>
+                        <div class="card-box">
+                            <a href="manhattan.html" style="text-decoration:none"> <p class="location" style="text-align:center; color:black;">✈ Manhattan, New York</p></a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="card">
+                    <div class="zoom-img">
+                        <div class="img-card">
+                            <img
+                                src="switzer.jpg">
+                        </div>
+                    </div>
+
+                    <div class="text">
+                        <span class="rating">⭐⭐⭐⭐⭐</span>
+                        <h2>The Limmat River,Zurich</h2>
+                        <p class="cost">$1870 / Per Person</p>
+                        <div class="card-box">
+                            <a href="bern.html" style="text-decoration:none"> <p class="location" style="text-align:center; color:black;">✈ Bern, Switzerland</p></a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="card">
+                    <div class="zoom-img">
+                        <div class="img-card">
+                            <img src="seoul.jpg">
+                        </div>
+                    </div>
+
+                    <div class="text">
+                        <span class="rating">⭐⭐⭐⭐⭐</span>
+                        <h2>The Namsan Tower</h2>
+                        <p class="cost">$1870 / Per Person</p>
+                        <div class="card-box">
+                            <a href="korea.html" style="text-decoration:none"> <p class="location" style="text-align:center; color:black;">✈ Seoul, South Korea</p></a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="card">
+                    <div class="zoom-img">
+                        <div class="img-card">
+                            <img
+                                src="thai.jpg">
+                        </div>
+                    </div>
+
+                    <div class="text">
+                        <span class="rating">⭐⭐⭐⭐⭐</span>
+                        <h2>The Phuket Island</h2>
+                        <p class="cost">$1870 / Per Person</p>
+                        <div class="card-box">
+                            <a href="thailand.html" style="text-decoration:none"> <p class="location" style="text-align:center; color:black;">✈ Phuket, Thailand</p></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="zoom-img">
+                        <div class="img-card">
+                            <img
+                                src="aust4.png">
+                        </div>
+                    </div>
+
+                    <div class="text">
+                        <span class="rating">⭐⭐⭐⭐⭐</span>
+                        <h2>Canberra,Australia</h2>
+                        <p class="cost">$1900 / Per Person</p>
+                        <div class="card-box">
+                            <a href="sydney.html" style="text-decoration:none"> <p class="location" style="text-align:center; color:black;">✈ Canberra, Australia</p></a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="card">
+                    <div class="zoom-img">
+                        <div class="img-card">
+                            <img
+                                src="paris4.jpg">
+                        </div>
+                    </div>
+
+                    <div class="text">
+                        <span class="rating">⭐⭐⭐⭐⭐</span>
+                        <h2>Paris,France</h2>
+                        <p class="cost">$1770 / Per Person</p>
+                        <div class="card-box">
+                            <a href="paris.html" style="text-decoration:none"> <p class="location" style="text-align:center; color:black;">✈ Paris, France</p></a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="card">
+                    <div class="zoom-img">
+                        <div class="img-card">
+                            <img
+                                src="lon4.webp">
+                        </div>
+                    </div>
+
+                    <div class="text">
+                        <span class="rating">⭐⭐⭐⭐⭐</span>
+                        <h2>London,England</h2>
+                        <p class="cost">$1870 / Per Person</p>
+                        <div class="card-box">
+                            <a href="london.html" style="text-decoration:none"> <p class="location" style="text-align:center; color:black;">✈ London, England</p></a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="card">
+                    <div class="zoom-img">
+                        <div class="img-card">
+                            <img
+                                src="italy4.jpg">
+                        </div>
+                    </div>
+
+                    <div class="text">
+                        <span class="rating">⭐⭐⭐⭐⭐</span>
+                        <h2>Rome,Italy</h2>
+                        <p class="cost">$1870 / Per Person</p>
+                        <div class="card-box">
+                            <a href="italy.html" style="text-decoration:none"> <p class="location" style="text-align:center; color:black;">✈ Rome, Italy</p></a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="card">
+                    <div class="zoom-img">
+                        <div class="img-card">
+                            <img
+                                src="germ4.jpg">
+                        </div>
+                    </div>
+
+                    <div class="text">
+                        <span class="rating">⭐⭐⭐⭐⭐</span>
+                        <h2>Germany</h2>
+                        <p class="cost">$1870 / Per Person</p>
+                        <div class="card-box">
+                            <a href="germany.html" style="text-decoration:none"> <p class="location" style="text-align:center; color:black;">✈ Berlin, Germany</p></a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="card">
+                    <div class="zoom-img">
+                        <div class="img-card">
+                            <img
+                                src="egypt4.jpg">
+                        </div>
+                    </div>
+
+                    <div class="text">
+                        <span class="rating">⭐⭐⭐⭐⭐</span>
+                        <h2>Cairo,Egypt</h2>
+                        <p class="cost">$1870 / Per Person</p>
+                        <div class="card-box">
+                            <a href="egypt.html" style="text-decoration:none"> <p class="location" style="text-align:center; color:black;">✈ Cairo, Egypt</p></a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <section class="about">
+            <div class="about-img">
+                <img src="amster.webp">
+            </div>
+            <div class="about-text">
+                <small>WHO WE ARE</small>
+<h2>Welcome to TravelSphere – Your Trusted Travel Partner</h2>
+<p>At TravelSphere, we believe in creating memorable travel experiences tailored to your needs.
+   Whether you're seeking adventure, relaxation, or cultural immersion, we are here to make it happen.
+   With a commitment to excellence, we strive to provide seamless and enjoyable journeys that exceed expectations.</p>
+
+
+   <label><input type="checkbox" checked>Exclusive Destination Deals</label>
+   <label><input type="checkbox" checked>24/7 Customer Support</label>
+   <label><input type="checkbox" checked>Personalized Trip Planning</label>
+   <label><input type="checkbox" checked>Flexible Payment Options</label>
+   
+   
+                <a href="#">EXPLORE US</a>
+            </div>
+        </section>
+
+
+        <div class="footer">
+            <div class="links">
+                <h3>Exclusive Deals</h3>
+                <ul>
+                    <li>Offers & Discounts</li>
+                    <li>Get Travel Deals</li>
+                    <li>Contact Us</li>
+                    <li>About</li>
+                </ul>
+            </div>
+            <div class="links">
+                <h3>New Destinations</h3>
+                <ul>
+                    <li>Luxury Escapes</li>
+                    <li>Group Tours</li>
+                    <li>Family-Friendly Vacations</li>
+                    <li>Adventure Trips</li>
+                </ul>
+            </div>
+            <div class="links">
+                <h3>Support</h3>
+                <ul>
+                    <li>Frequently Asked Questions</li>
+                    <li>Report a Booking Issue</li>
+                    <li>Terms & Conditions</li>
+                    <li>Privacy Policy</li>
+                </ul>
+            </div>
+        </div>
+    </body>
+
+</html>
+</body>
+
+</html>

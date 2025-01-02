@@ -1,0 +1,118 @@
+/* Reset and Body Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f3f3;
+  }
+  
+  /* Header and Navigation */
+  header {
+    background-color: #0a75ad;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+  }
+  
+  header h1 {
+    font-size: 2.5rem;
+  }
+  
+  nav ul {
+    display: flex;
+    justify-content: center;
+    background-color: #0a75ad;
+  }
+  
+  nav ul li {
+    list-style: none;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 1rem 2rem;
+    display: block;
+    transition: background 0.3s;
+  }
+  
+  nav ul li a:hover {
+    background-color: #004d7a;
+  }
+  
+  /* Destination Section Styling */
+  #destinations {
+    padding: 2rem;
+  }
+  
+  /* Continent Styling */
+  .continent {
+    display: none; /* Hide all sections initially */
+    animation: fadeIn 1s ease;
+  }
+  
+  .continent.active {
+    display: block; /* Display only the active continent */
+  }
+  
+  .continent h2 {
+    font-size: 2rem;
+    color: #0a75ad;
+    margin-bottom: 1rem;
+  }
+  
+  .country {
+    margin-bottom: 2rem;
+  }
+  
+  .country h3 {
+    font-size: 1.5rem;
+    color: #005f8c;
+  }
+  
+  /* Place Name and Image Styling */
+  .country ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  
+  .country ul li {
+    background-color: #e6f7ff;
+    padding: 1rem;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    text-align: center;
+    transition: transform 0.3s, background-color 0.3s;
+  }
+  
+  .country ul li:hover {
+    transform: scale(1.1);
+    background-color: #b3e0ff;
+  }
+  
+  .country ul li img {
+    max-width: 100px;
+    border-radius: 5px;
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #0a75ad;
+    color: white;
+    
+  }
+  
+  /* Animation */
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
